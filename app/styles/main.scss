@@ -63,18 +63,46 @@ body {
 body {
   display: table;
   background: #222222;
+  font-family: 'Roboto', sans-serif;
+  color: #F4F4F4;
+}
+
+h1 {
   font-family: "Progress", "Times New Roman", Georgia, Serif;
-  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+p {
+  font-weight: 300;
+  font-size: .750em;
 }
 
 .container {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  text-transform: uppercase;
 }
 
-h1 {font-size: 2em;}
+.btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 10px 15px;
+  border: 1px solid #F4F4F4;
+  border-radius: 3px;
+  font-size: .850em;
+  font-weight: 300;
+  text-decoration: none;
+  color: #F4F4F4;
+  -webkit-transition: background 200ms ease-out;
+
+  @media (min-width: 1024px) {
+    &:hover {
+      background: rgba(244,244,244, 0.2);
+    }
+  }
+}
 
 .browsehappy {
   margin: 0.2em 0;
